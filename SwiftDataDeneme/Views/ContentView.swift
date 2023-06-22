@@ -20,7 +20,6 @@ struct ContentView: View {
             Form{
                 Section {
                     TextField("Title", text: $title)
-//                    Toggle("Completed", isOn: $isComleted)
                     DatePicker("Tarih", selection: $date, displayedComponents: .date)
                     Button("Save") {
                         let toDoItem = TestModel(title: title, isComleted: isComleted, date: date)
