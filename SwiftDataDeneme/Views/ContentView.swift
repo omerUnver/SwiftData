@@ -11,7 +11,7 @@ import SwiftData
 struct ContentView: View {
     @Environment(\.modelContext) private var context
     @Environment(\.colorScheme) var colorScheme
-    @Query(sort: \TestModel.title, order: .forward, animation: .spring) private var allToDoItem : [TestModel]
+    @Query(sort: \TestModel.date, order: .reverse, animation: .spring) private var allToDoItem : [TestModel]
     @State private var title : String = ""
     @State private var isComleted : Bool = false
     @State private var date : Date = Date.now
